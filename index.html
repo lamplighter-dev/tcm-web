@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html>
+    <title>THE CRUEL MOTHER</title>
+    <link href='https://fonts.googleapis.com/css?family=Silkscreen' rel='stylesheet'>
+    <style>
+        h1 { color: yellow; font-family: 'Silkscreen'; font-weight: bold; font-weight: 700; font-size: xx-large; text-align:center;}
+        
+    </style>
+
+    <header>
+        <h1 style = "border: darkgray; border-radius: 1%;">THE CRUEL MOTHER</h1>
+    </header>
+
+    <body style="background-color:black;">
+
+         <!-- Tab links -->
+        <div style = "color:white; margin-left:30%; margin-right: 30%;" class="tab">
+        <button class="tablink" onclick="openPage('ABOUT', this, 'red')">HOME</button>
+        <button class="tablink" onclick="openPage('MEDIA', this, 'green')" id="defaultOpen">MEDIA</button>
+        <button class="tablink" onclick="openPage('CONTACT', this, 'blue')">CONTACT</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="ABOUT" class="tabcontent">
+        <p style = "color:white; margin-left:30%; margin-right: 30%;"> THE CRUEL MOTHER is an in-development voxel survival horror game. </p>
+        </div>
+
+        <div id="MEDIA" class="tabcontent">
+        <p style = "color:white; margin-left:30%; margin-right: 30%;">this is the media tab</p> 
+        </div>
+
+        <div id="CONTACT" class="tabcontent">
+        <p style = "color:white; margin-left:30%; margin-right: 30%;">this is the contact tab</p>
+        </div>
+
+        <script>
+        function openPage(pageName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+    </body>
+
+   
