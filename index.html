@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 
 <html>
+    
     <title>THE CRUEL MOTHER</title>
-    <link href='https://fonts.googleapis.com/css?family=Silkscreen' rel='stylesheet'>
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
     <style>
-        h1 { color: yellow; font-family: 'Silkscreen'; font-weight: bold; font-weight: 700; font-size: xx-large; text-align:center;}
+        h1 { color: yellow; font-family: 'DOS'; font-weight: bold; font-weight: 700; font-size: xx-large; text-align:center;}
         
     </style>
 
@@ -12,49 +15,49 @@
         <h1 style = "border: darkgray; border-radius: 1%;">THE CRUEL MOTHER</h1>
     </header>
 
-    <body style="background-color:black;">
+    <body style="background-color:black; font-family: 'DOS'">
 
          <!-- Tab links -->
-        <div style = "color:white; margin-left:30%; margin-right: 30%" class="tab">
-        <button class="tablink" style = "font-family: 'Courier New', Courier, monospace" onclick="openPage('HOME', this, 'yellow')"id="defaultOpen">HOME</button>
-        <button class="tablink" style = "font-family: 'Courier New', Courier, monospace" onclick="openPage('BLOG', this, 'yellow')">BLOG</button>
-        <button class="tablink" style = "font-family: 'Courier New', Courier, monospace" onclick="openPage('MEDIA', this, 'yellow')">MEDIA</button>
-        <button class="tablink" style = "font-family: 'Courier New', Courier, monospace" onclick="openPage('DEVELOPMENT', this, 'yellow')">DEVELOPMENT</button>
+        <div style = "color:white; margin-left:30%; margin-right: 30%;" class="tab">
+            <button class="tablink" style = "font-family: 'DOS'" onclick="openPage('HOME', this, 'yellow')"id="defaultOpen">HOME</button>
+            <button class="tablink" style = "font-family: 'DOS'" onclick="openPage('BLOG', this, 'yellow')">BLOG</button>
+            <button class="tablink" style = "font-family: 'DOS'" onclick="openPage('MEDIA', this, 'yellow')">MEDIA</button>
+            <button class="tablink" style = "font-family: 'DOS'" onclick="openPage('DEVELOPMENT', this, 'yellow')">DEVELOPMENT</button>
         </div>
 
         <!-- Tab content -->
-        <div id="HOME" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'Courier New', Courier, monospace">
+        <div id="HOME" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'DOS'">
         <p> THE CRUEL MOTHER is an in-development voxel survival horror game. </p>
-        <img src="pan.gif" width="512">
+        <img src="media/pan.gif" width="512">
         <p> survive alone or with friends in online against the great unknown... </p>
         </div>
 
-        <div id="MEDIA" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'Courier New', Courier, monospace">
+        <div id="MEDIA" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'DOS'">
         <p> a deer galloping around. it's procedurally animated</p>
-        <img src="deer_galloping.gif" width="512">
+        <img src="media/deer_galloping.gif" width="512">
         <p> this is the first song i made for the game: </p> 
         <audio controls>
-        <source src="green pasture.ogg" type="audio/ogg">
+        <source src="media/green pasture.ogg" type="audio/ogg">
         </audio> 
-        <p> all of the songs in THE CRUEL MOTHER are MIDI rather than your standard .mp3 or .ogg - the music is synthesized in real time by the engine.</p>
+        <p> all of the songs in the cruel mother are MIDI rather than your standard .mp3 or .ogg - the music is synthesized in real time by the engine.</p>
 
-        <img src="image0.png" width="512">
+        <img src="media/image0.png" width="512">
         <p> this is an older screenshot from before i decided to pixelate everything: </p>
-        <img src="image1.png" width="512">
+        <img src="media/image1.png" width="512">
         </div>
 
-        <div id="DEVELOPMENT" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'Courier New', Courier, monospace">
-        <p> THE CRUEL MOTHER is being developed in a custom engine built with the rust programming language and opengl.</p>
+        <div id="DEVELOPMENT" class="tabcontent" style = "color:white; margin-left:30%; margin-right: 30%; font-family: 'DOS'">
+        <p> the cruel mother is being developed in a custom engine built with the rust programming language and opengl.</p>
         <p> i have been developing the game as a solo project in my free time since october 2024. it is currently in a sort of pre-alpha stage. </p>
         <p> my plan is to release a public, free to play beta hopefully by the end of 2026. after that, a complete release version will eventually be put on steam. </p>
-        <p> i post weekly updates in the blog section. i'm not currently posting on any social media platforms because i dont like the format, though i have an inactive bluesky: </p>
+        <p> i post weekly updates in the blog section. i'm not currently posting on any social media platforms, though i do have an inactive bluesky: </p>
         <p> https://bsky.app/profile/thecruelmother.xyz </p>
         <p> and a youtube: </p>
         <p> https://www.youtube.com/@THECRUELMOTHER </p>
         </div>
 
-        <div id="BLOG" class="tabcontent">
-            <embed src="2-10-26.html">
+        <div id="BLOG" class="tabcontent" style = "margin-left:30%; margin-right: 30%;" >
+            <embed src="blogs/2-10-26/content.html" width="800" height="2000">
         </div>
 
         <script>
