@@ -1,0 +1,62 @@
+<head>
+<link rel="stylesheet" href="/styles.css">
+</head>
+
+<style>
+    h1 { color: yellow; font-family: 'DOS'; font-weight: bold; font-weight: 700; font-size: xx-large; text-align:left;}
+    p { color: white; font-family: 'DOS' }
+</style>
+
+<header style = "color:white; font-family: 'DOS'">
+    
+    <h1>programming fear</h1>
+    <h2>2/17/2026</h2>
+</header>
+
+<p>
+    ========================================================================================
+</p>
+
+<p>
+    as i close out developmnet on the first alpha version, i've been working on the ai for the first hostile creature in the game. this has proven itself to be very challenging
+</p>
+
+<p>
+    in a game like minecraft, monsters can have relatively simple ai because they're not meant to do very complicated things. for minecraft this works fine, but for my game it would
+    make the horror way less effective.
+</p>
+
+<p>
+    i have to strike a balance between the creature being too passive and too aggressive. having it be more passive can build tension, but might make it feel less threatening.
+    having it be more aggressive will be more immediately scary, but that fear quickly goes away when the player dies too soon
+</p>
+
+<p>
+    there is also the consideration of pacing - how quickly should its aggresion increase? making it too slow, again, runs the risk of making it not feel threatening. making it too fast
+    will ruin the tension.
+</p>
+
+<p>
+    the problem of strange edge cases comes up a lot in a sandbox world. unlike a traditional horror game, a monster can end up in various unpredictable situations in the voxel world.
+    it can be boxed in by players, or end up in a cave. it can be on an island surrounded by water, or an island suspended in the air. most importantly, it can be outside player's fortresses
+    and be trying to find a way in. if these cases aren't considered, this creature could end up getting stuck and die very anticlimactically.
+</p>
+
+<p>
+    you could, of course, make the creature just phase through blocks or fly around or something. but in many cases this will feel unfair to the player and make them feel punished
+    for outsmarting the ai.
+</p>
+
+<p>
+    i hope that the pathing system in my game will get around this at least somewhat. the algorithm is based on leg placements, allowing traversal on uneven and difficult terrain:
+</p>
+
+<video width="500" controls>
+
+    <source src="pathing.mp4" type="video/mp4">
+    video tag not supported
+</video>
+
+<p>
+    for now, i can only prevent what i think may happen and then see the actual results in the first playtest.
+</p>
